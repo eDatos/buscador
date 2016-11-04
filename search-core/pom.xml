@@ -19,22 +19,22 @@
             <groupId>es.gobcan.istac.search-indexer</groupId>
             <artifactId>search-indexer-domain</artifactId>
         </dependency>
-        
+
         <!-- SEARCH -->
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>search-dao</artifactId>
             <version>${project.version}</version>
         </dependency>
-        
+
         <!-- SOLR -->
         <dependency>
             <groupId>org.apache.solr</groupId>
             <artifactId>solr-solrj</artifactId>
         </dependency>
-        
+
         <!-- SPRING -->
-         <dependency>
+        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
         </dependency>
@@ -66,7 +66,7 @@
             <groupId>cglib</groupId>
             <artifactId>cglib-nodep</artifactId>
         </dependency>
-        
+
         <!-- LOGGING -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -90,7 +90,7 @@
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
         </dependency>
-        
+
         <!-- MISCELLANEOUS -->
         <dependency>
             <groupId>joda-time</groupId>
@@ -98,6 +98,4 @@
         </dependency>
     </dependencies>
 
-    <build>
-    </build>
 </project>
