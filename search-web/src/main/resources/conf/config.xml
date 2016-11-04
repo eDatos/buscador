@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!-- NOTA: Las propiedades del sistema se configuran en: SetupApplicationListener -->
+<!-- <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="commons-configuration.xsd">  -->
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <override>
+	<system />
+	
+	<properties config-name="buscador-static-conf" fileName="${istac.idxmanager.buscador.data.url}/conf/estatica/buscador.xml" config-optional="false" />
+	
+
+<!--    <properties fileName="${gpe.data.url}/conf/dynamic/xform.xml" config-optional="false" >-->
+<!--        <reloadingStrategy config-class="org.apache.commons.configuration.reloading.FileChangedReloadingStrategy" refreshDelay="10000"/>        -->
+<!--    </properties>-->
+  	
+  </override>
+</configuration>

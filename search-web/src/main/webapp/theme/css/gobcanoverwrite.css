@@ -1,0 +1,46 @@
+/*************************
+Sobrescritura estilos gobierno
+**************************/
+body {
+    overflow-y: scroll; 
+}
+
+body fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.bloq_izq_grande {
+  float: left;
+  margin-left: 1px;
+  margin-right: 13px;
+  width: 588px;
+}
+
+ul.nav, ul.menu_lat_der {
+  margin: 0;
+  padding: 5px 5px 5px 7px;
+}
+
+ul.menu_lat_der li {
+    background: url(../images/img/flecha_menulat.gif) no-repeat scroll left 4px;
+    line-height: 1.5;
+    list-style-type: none;
+    padding: 3px 0 3px 8px;
+    margin: 0;
+    text-align: left;
+}
+
+ul.menu_lat_der li a {
+    color: #000000;
+    text-decoration: none;
+    background: none;
+    padding: 0;
+}
+
+
+/* BugFix */
+.entreSel, .pestSel {
+   background: none;
+}

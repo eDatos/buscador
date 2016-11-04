@@ -1,0 +1,18 @@
+#formu dl {
+	clear:both;
+}
+
+#formu dt {
+	float:left; 
+	text-align:right; 
+	width:150px; 
+	line-height:25px; 
+	margin:0 10px 10px 0;
+}
+
+#formu dd {
+	float:left; 
+	width:475px; 
+	line-height:25px; 
+	margin:0 0 10px 0;
+}

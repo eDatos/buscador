@@ -1,0 +1,455 @@
+/****************************************************/
+/*            RESULTADOS BUSQUEDA                   */
+/****************************************************/
+
+.pest {
+	width : 12em;	
+}
+.resultado_busqueda {
+	margin-bottom: 1.5em;
+	background:url(../images/img/borde_bajo_migas.gif) repeat-x left bottom;
+    padding:0 0 7px;
+}
+
+.resultado_busqueda_suggested {
+	margin-bottom: 1em;
+	background-color: #e5ecf9;
+	padding-bottom : 5px;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.resultado_titulo {
+	border-bottom: none !important;
+}
+
+.resultado_item {
+	padding:  6px 0 1px 10px;
+}
+
+.resultado_item em{
+	font-style:	normal;
+	font-weight: bold;
+}
+
+#opcion_ordenacion a {
+	color:#535353; 
+	text-decoration:none;
+}
+
+#opcion_ordenacion {
+	font-size:  0.9em;
+	margin-right: 20px;
+	margin-top: 2em;
+}
+
+#opcion_ordenacion p {
+    margin-bottom: 0;
+}
+
+.resultado_titulo a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.resultado_titulo  a:link {
+	color:#036 !important; 
+	text-decoration:none !important;
+}
+
+.resultado_titulo  a:visited {
+	color:#036 !important; 
+}
+.resultado_titulo  a:hover {
+	color:#036 !important; 
+	text-decoration:underline !important;
+}
+
+.resultado_item a:link {
+	color:#A4A4A4 !important; 
+	text-decoration:underline !important;
+}
+
+.resultado_item  a:visited {
+	color:#036 !important; 
+}
+.resultado_item  a:hover {
+	color:#036 !important; 
+	text-decoration:underline !important;
+}
+
+.resultado_item_highlight {
+    color:  #707070;
+}
+
+.resultado_item_nm_type {
+    color:  #808080;
+}
+
+/****************************************************/
+/*            FORM BUSQUEDA                   		*/
+/****************************************************/
+
+
+
+#busqueda .custom-input-group {
+    position: relative;
+    padding-right: 73px;
+}
+
+#busqueda #userQuery {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    display: block;
+}
+
+#busqueda #userQuery:focus {
+    border-right-color: #66afe9;
+}
+
+#busqueda .custom-input-group-btn {
+    width: 72px;
+    position: absolute;
+    top: 0;
+    right: 0; 
+}
+
+#busqueda .custom-input-group-btn .dropdown {
+    float: left;
+}
+
+#busqueda #normalSearch {
+    float: left;
+}
+
+#busqueda {
+    margin-bottom: 0;
+}
+
+/* Fix for open event padding */
+#busqueda .custom-input-group-btn .btn-group.open {
+    padding: 0;
+}
+
+#busqueda .custom-input-group-btn .btn-default {
+    background: white;
+    box-shadow: none;
+    border-left: none;
+    border-color: #ccc;
+}
+
+#busqueda .custom-input-group-btn .btn-default:hover, #busqueda .custom-input-group-btn .btn-default:active, #busqueda .custom-input-group-btn .btn-default:focus {
+    border-color: #ccc;
+}
+
+#busqueda .custom-input-group-btn .btn-default .caret {
+    color: #dbdbdb;
+}
+
+#busquedaAvz input {
+	margin: 0 !important;
+}
+
+#busqueda input {
+	margin: 0 !important;
+	vertical-align: bottom;
+}
+
+#busquedaAvLnk {
+	font-size: 0.9em;
+	margin-left: 10px;
+}
+
+.busquedaAvLnk {
+    clear: both;
+    background:url(../images/img/flecha_menulat.gif) no-repeat left top;
+    padding:0 0 3px 10px;
+    float: right;
+    margin: 2px 0 2px 0;
+}
+
+.busquedaAvLnk a:link {
+    color: #036;
+    text-decoration: none;
+}
+
+.busquedaAvLnk a:visited {
+    color: #036;
+}
+
+.busquedaAvLnk a:hover {
+    color: #036;
+    text-decoration: underline;
+}
+
+/*  Desplegable avanzada */
+
+#busquedaAvz .form-group {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.dropdown.dropdown-lg .dropdown-menu {
+    padding: 6px 20px;
+}
+
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+
+.btn-group .btn {
+    border-radius: 0;
+    margin-left: -1px;
+}
+
+.btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.btn-group .form-horizontal .btn[type="submit"] {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.form-group .form-control:last-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    #search-control {
+        margin: 0 auto;
+    }
+    .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu {
+        min-width: 500px;
+    }
+}
+
+/* Fix for gobcanistacoverwrite.css */
+.dropdown.dropdown-lg.open {
+    padding: 0;
+}
+
+/* Adjust styles for advanced form*/
+#busqueda .page-header {
+    padding-bottom: 0;
+    margin: 20px 0 10px;
+    border-bottom: none;
+}
+
+#search-adv select, #search-adv input, #search-adv button {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-size: 12px;
+    height: 28px;
+}
+
+.select2-container--bootstrap .select2-selection {
+    font-size: 12px;
+    height: 28px;
+}
+
+#search-adv .resultado_titulo {
+    font-size: 14px;
+    background: transparent url(../images/img/flecha_menulat.gif) no-repeat scroll left -2px;
+}
+
+.contenido .bloq_izq_grande #search-adv {
+    width: 549px;
+    margin-right: 39px;
+    margin-top: 3px;
+}
+
+.contenido #search-adv {
+    width: 723px;
+    margin-right: 39px;
+}
+
+
+/****************************************************/
+/*            FACETEDS		                   		*/
+/****************************************************/
+
+.qtip{
+    max-width: 700px !important;
+}
+    
+
+/* TAGS Opcion A */
+.facetedTags {
+	margin: 4px 0 20px !important;
+	padding: 0;
+}
+
+.facetedTags li {
+	display: inline !important;
+	background-image: url(../images/img/minus_small.png) !important;
+	background-color: #eef !important;
+	background-position: right center !important;
+	background-repeat: no-repeat !important;
+	list-style-type: none !important;
+	padding: 0 18px 0 6px !important;
+	margin: 0 4px !important;	
+	cursor: pointer !important;
+}
+
+.facetedTags li:hover {
+	background-color: #eee !important;
+}
+
+#facetedTags strong {
+	float: left;
+	margin: 0 10px 10px 0;
+	line-height : 1.6;
+
+}
+
+/* TAGS Opcion B */
+
+.filterLink {
+	float: left;
+	margin-bottom: 5px;
+	width: 115px;	
+}
+
+.removeButton {
+	float: right;
+	margin-right: 5px;
+	width: 20px;
+}
+
+.bloq_izd h2.filtrado {
+	float:left;
+	font-size:1em;
+	height:17px;
+	margin:0;
+}
+
+h2.filtrado {
+	color: #036;
+	float: left;
+	font-size: 1em;
+	font-weight: 700;
+	height: 20px;
+	margin: 0;
+	padding: 4px 0 0 4px;
+	width: 147px;
+}
+
+.menu_izd_filtrado {
+	float: left;
+	width: 148px;
+	border-top: 1px dotted;
+	padding-top: 8px;
+}
+
+/* Listas  */
+#gutter {
+	float: left;
+	width: 3%;
+	height: 1px;
+}
+
+#col1{
+	float: left;
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+#col2{
+	float: left;
+	width: 200px;
+	margin-left: 3%;
+	margin-bottom: 10px;
+}
+
+#col3 {
+	float: left;
+	width: 200px;
+	margin-left: 3%;
+	margin-bottom: 10px;
+}
+
+/****************************************************/
+/*            Clearable input                       */
+/****************************************************/
+
+::-ms-clear {
+    display: none;
+}
+
+.contenido #userQuery {
+    padding: 3px 18px 3px 4px;
+    transition: background 0.4s;
+    background: #fff url(data:image/gif;base64,R0lGODlhBwAHAIAAAP///5KSkiH5BAAAAAAALAAAAAAHAAcAAAIMTICmsGrIXnLxuDMLADs=) no-repeat right -50px center;
+    border-right-color: transparent;
+    box-shadow: none;
+}
+
+.contenido #userQuery.x {
+    background-position: right 5px center;
+}
+
+.contenido #userQuery.onX {
+    cursor: pointer;
+}
+
+/****************************************************/
+/*            Cloud Tags                            */
+/****************************************************/
+#containerTags {
+    margin-top: 5px;
+}
+
+.btn-tag {
+    float: left;
+    margin-top: 5px;
+}
+
+.btn-label a {
+    padding: 3px 6px;
+}  
+
+#containerTags .btn-label i {
+    font-size: 12px;
+    color: grey;
+    top: 2px;
+}
+
+.btn-labeltext {
+    margin: 0px 10px 0px -5px;
+    color: grey;
+    font-weight: bold;
+}
+
+/****************************************************/
+/*           Otros                                  */
+/****************************************************/
+
+.pestanias {
+    border-bottom: 1px solid #D7D7D7;
+    height: 25px;
+    margin: 1px;
+}
+
+/* Select2 body align for text */
+.select2-results {
+    text-align: left;
+}
+
+/* Select2 delete cross fix */
+.select2-container--bootstrap .select2-selection__clear {
+    position: relative;
+}

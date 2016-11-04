@@ -1,0 +1,81 @@
+/****************************************************/
+/* Enlaces con estilo de botton                     */
+/****************************************************/
+a.rounded_button,  a.rounded_button-dis, a.rounded_button:hover, a:link .rounded_button, a:visited .rounded_button, a:active .rounded_button, a.rounded_button span,
+span.rounded_button input, span.rounded_button input:hover, span.rounded_button input:active {
+	text-decoration: none;
+	outline: 0 none;
+}
+
+a.rounded_button, a.rounded_button span, span.rounded_button, span.rounded_button input {
+	background-repeat:no-repeat;
+	background-image: url(../images/botones/boton_accion.gif);
+}
+
+a.rounded_button, span.rounded_button {
+	line-height: 12px;
+	height: 20px; /* Height of button background height */
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-left: 11px;
+	display: block; /*opera*/
+	display: inline-block; /*ie*/
+	display: -moz-inline-box; /*ff*/
+	vertical-align: middle;
+	
+	background-position:0 0;
+	
+	font-weight: normal;
+	color: black;
+}
+
+
+a.rounded_button span, span.rounded_button input {
+	border: none;
+	background-color: transparent;
+	background-position: 100% 0;
+	padding-left: 0px;
+	padding-right: 16px;
+	
+	display: block;
+	display: inline-block;
+	line-height: 12px;
+	color: black;
+	white-space:nowrap;	
+}
+
+a.rounded_button span {
+	height: 12px;
+}
+
+span.rounded_button input {
+	height: 20px;
+	overflow: visible;
+	border: 0;
+	margin: 0px;
+}
+
+a.rounded_button:hover, span.rounded_button:hover {
+	background-position: 0 100%;
+	cursor: pointer;
+}
+
+a.rounded_button:hover span, span.rounded_button:hover input {
+	background-position: 100% 100%;
+	cursor: pointer;
+}
+a.rounded_button span {
+	padding-top: 4px;
+	padding-bottom: 4px; 
+}
+
+span.rounded_button input::-moz-focus-inner {
+	border: 0;
+}
+
+span.rounded_button input {
+	width: auto;
+	outline: none;
+}
+
+
