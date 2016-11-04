@@ -196,6 +196,7 @@ public class SolrServiceImpl implements InitializingBean, SolrService {
         try {
             return solrClient.query(solrQuery);
         } catch (SolrServerException | IOException e) {
+            log.error("Imposible Ejecutar query: " + solrQuery, e);
             throw new ServiceExcepcion(ServiceExcepcionTipo.SERVICE_GENERAL);
         }
     }
