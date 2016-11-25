@@ -2,15 +2,19 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
   <comment>Configuraciones para el BUSCADOR</comment>
+  
   <entry key="istac.idxmanager.solr.endpoint">http://192.168.1.38:8983/solr</entry>
   <!-- entry key="istac.idxmanager.solr.usuario">none</entry-->
   <!-- entry key="istac.idxmanager.solr.password">none</entry-->
   
   <entry key="istac.idxmanager.solr.urljaxi">http://192.168.1.38:9080/jaxi-web</entry>
+  <entry key="istac.idxmanager.solr.urlvisualizer">http://localhost/statistical-visualizer/visualizer</entry>
   
-    <!-- En caso de usar un servidor Solr instalado en modo "cloud", en esta propiedad se debe especificar el nombre de la coleccion -->
-    <!-- En caso de usar un servidor Solr NO instalado en modo "cloud", en esta propiedad se debe especificar el nombre del core de indexacion -->
-    <entry key="istac.idxmanager.solr.core_or_collection">istac</entry>
-    <!-- "true" en caso de usar un servidor Solr instalado en modo "cloud", "false" en otro caso -->
-    <entry key="istac.idxmanager.solr.cloud_server_enabled">false</entry>
+  
+  <!-- En caso de usar un servidor Solr instalado en modo "cloud", en esta propiedad se debe especificar el nombre de la coleccion -->
+  <!-- En caso de usar un servidor Solr NO instalado en modo "cloud", en esta propiedad se debe especificar el nombre del core de indexacion -->
+  <entry key="istac.idxmanager.solr.core_or_collection">istac</entry>
+  <!-- "true" en caso de usar un servidor Solr instalado en modo "cloud", "false" en otro caso -->
+  <entry key="istac.idxmanager.solr.cloud_server_enabled">false</entry>
+    
 </properties>

@@ -5,17 +5,15 @@
 <%@page import="es.gobcan.istac.idxmanager.domain.dom.TypeNMDomain" %>
 <%@page import="org.apache.solr.common.SolrDocument" %>
 <%@page import="java.text.*, java.util.*" %>
+<%@page import="es.gobcan.istac.idxmanager.web.buscador.util.WebUtils" %>
 
 
 <div class="resultado_busqueda">
 <h3 class="resultado_titulo">
 <c:choose>
-    <c:when test="${item['formato'] eq 'ARCHIVO_PDF'}">
-        <a href="${urlPxJaxiDescarga}${item['id']}">${item['nm_title'][0]}</a>
-    </c:when>
-    <c:when test="${(item['nm_type'] eq 'DSC') && (item['formato'] ne 'ARCHIVO_PX')}"><a href="${urlPxJaxi}${item['id']}">${item['nm_title'][0]}</a></c:when>
-    <c:when test="${(item['nm_type'] eq 'DSP') && (item['formato'] ne 'ARCHIVO_PX')}"><a href="${urlPublicacionJaxi}${item['id']}">${item['nm_title'][0]}</a></c:when>
-	<c:otherwise>dd
+	<c:when test="${item['nm_type'] eq 'DSC'}"><a href='<%=WebUtils.generatetUrlMetamacStatisticalVisualizer((SolrDocument)pageContext.getAttribute("item"))%>'>${item['nm_title'][0]}</a></c:when>
+	<c:when test="${item['nm_type'] eq 'DSP'}"><a href='<%=WebUtils.generatetUrlMetamacStatisticalVisualizer((SolrDocument)pageContext.getAttribute("item"))%>'">${item['nm_title'][0]}</a></c:when>
+	<c:otherwise>
 		${item['nm_title'][0]}
 	</c:otherwise>
 </c:choose>
@@ -43,9 +41,6 @@
 	 </c:if>
      <fmt:message key="dominio.nucleo.tipo.${item['nm_type']}" />
     </span>
-    <c:if test="${(item['nm_type'] eq 'DSC') && (item['formato'] ne 'ARCHIVO_PDF')}">
-        <span style="float:right;"><a href="${urlPxJaxiDescarga}${item['id']}">Descarga archivo PC-Axis</a></span>
-    </c:if>
  </div>
 </c:if>
 

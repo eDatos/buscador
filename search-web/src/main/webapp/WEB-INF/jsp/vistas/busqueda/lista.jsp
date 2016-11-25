@@ -126,6 +126,9 @@
     		              		<c:if test="${item['origen_recurso'] eq 'WEB'}">
     		              			<%@ include file="/WEB-INF/jsp/vistas/busqueda/item_web.jsp" %>
     		              		</c:if>
+                                <c:if test="${item['origen_recurso'] eq 'MTM_STAT_RESOURCES'}">
+                                    <%@ include file="/WEB-INF/jsp/vistas/busqueda/item_metamac.jsp" %>
+                                </c:if>
     		              </c:forEach>
     					  <%@ include file="/WEB-INF/jsp/vistas/busqueda/paginacion.jsp" %>
     				 

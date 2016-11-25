@@ -31,8 +31,5 @@
         <div class="resultado_item resultado_item_nm_type">
             <fmt:formatDate value="${item['nm_last_update']}" pattern="dd/MM/yyyy" />
         </div>
-        <c:forEach var="item2" items="${item['nm_type']}" varStatus="status">
-           aaaa
-         </c:forEach>
     </c:if>
 </div>

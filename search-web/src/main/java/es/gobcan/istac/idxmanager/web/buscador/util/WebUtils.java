@@ -6,12 +6,15 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.http.client.utils.URIBuilder;
+import org.apache.solr.common.SolrDocument;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.arte.acom.configuration.ConfigurationService;
 
+import es.gobcan.istac.idxmanager.core.util.ApplicationContextProvider;
+import es.gobcan.istac.idxmanager.domain.dom.TypeNMDomain;
 import es.gobcan.istac.idxmanager.domain.modelo.IndexacionEnumDomain;
 import es.gobcan.istac.idxmanager.web.buscador.mvc.domain.BusquedaWrapper;
 
@@ -19,14 +22,14 @@ import es.gobcan.istac.idxmanager.web.buscador.mvc.domain.BusquedaWrapper;
 @Scope(value = "singleton")
 public class WebUtils {
 
-    protected static Log         log                = LogFactory.getLog(WebUtils.class);
+    protected static Log log = LogFactory.getLog(WebUtils.class);
 
     @Autowired
     private ConfigurationService configurationService;
 
-    private String               urlPublicacionJaxi = null;
-    private String               urlPxJaxi          = null;
-    private String               urlPxJaxiDescarga  = null;
+    private String urlPublicacionJaxi = null;
+    private String urlPxJaxi = null;
+    private String urlPxJaxiDescarga = null;
 
     public String getUrlPublicacionJaxi() {
         if (StringUtils.isEmpty(urlPublicacionJaxi)) {
@@ -62,6 +65,27 @@ public class WebUtils {
             urlPxJaxiDescarga = buff.toString();
         }
         return urlPxJaxiDescarga;
+    }
+
+    public static String generatetUrlMetamacStatisticalVisualizer(SolrDocument item) {
+        String fieldValue = (String) item.getFieldValue(IndexacionEnumDomain.NM_TYPE.getCampo());
+        TypeNMDomain typeNMDomain = TypeNMDomain.fromSiglas(fieldValue);
+        if (typeNMDomain == null) {
+            return null;
+        }
+
+        ConfigurationService configurationService = (ConfigurationService) ApplicationContextProvider.getApplicationContext().getBean("configurationService");
+        String statVisualizer = configurationService.getProperties().getProperty("istac.idxmanager.solr.urlvisualizer");
+
+        switch (typeNMDomain) {
+            case DATASET_DSC:
+                return MetamacPortalWebUtils.buildDatasetVersionUrl(item, typeNMDomain, statVisualizer);
+            case COLLECTION_DSP:
+                return MetamacPortalWebUtils.buildPublicationVersionUrl(item, typeNMDomain, statVisualizer);
+
+            default:
+                return null;
+        }
     }
 
     public static String generarUrl(String urlBase, BusquedaWrapper busquedaWrapper) {
