@@ -7,7 +7,7 @@ DEPLOY_TARGET_PATH=/servers/metamac/tomcats/metamac01/webapps
 LOGBACK_RELATIVE_PATH_FILE=WEB-INF/classes/logback.xml
 
 scp -r etc/deploy deploy@estadisticas.arte-consultores.com:$TRANSFER_PATH
-scp buscador-istac-web/target/buscador*.war deploy@estadisticas.arte-consultores.com:$TRANSFER_PATH/search.war
+scp search-web/target/buscador*.war deploy@estadisticas.arte-consultores.com:$TRANSFER_PATH/search.war
 ssh deploy@estadisticas.arte-consultores.com <<EOF
 
     chmod a+x $TRANSFER_PATH/deploy/*.sh;
@@ -34,6 +34,5 @@ ssh deploy@estadisticas.arte-consultores.com <<EOF
     sudo chown -R metamac.metamac /servers/metamac
     sudo service metamac01 start
 #    checkURL "http://estadisticas.arte-consultores.com/search/" "metamac01"
-#    checkURL "http://estadisticas.arte-consultores.com/search-internal/" "metamac01"
 
 EOF

@@ -7,6 +7,7 @@
   
     <!-- SOLR -->
     <entry key="istac.idxmanager.solr.endpoint">http://localhost:8983/solr</entry>
+    <entry key="istac.idxmanager.solr.urlvisualizer">http://estadisticas.arte-consultores.com/statistical-visualizer/visualizer</entry>
 
 <!--     <entry key="istac.idxmanager.solr.endpoint">http://localhost:8984/solr</entry>  -->
     <!-- En caso de usar un servidor Solr instalado en modo "cloud", en esta propiedad se debe especificar el nombre de la coleccion -->
