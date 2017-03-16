@@ -8,11 +8,11 @@
         <!-- MENU DE AYUDA -->
         <ul>
             <li style="padding-right: 2px; margin-right: 1px;">Síguenos:
-                <a href="https://www.gobiernodecanarias.org/istac/herramientas/rss.html" style="padding-right: 0px; margin-right: 0px;" accesskey="r" title="Canales RSS (tecla de acceso: r)">
+                <a href="http://www.gobiernodecanarias.org/istac/herramientas/rss.html" style="padding-right: 0px; margin-right: 0px;" accesskey="r" title="Canales RSS (tecla de acceso: r)">
                     <img style="vertical-align: text-bottom; float: none;" src="theme/images/icons/atom.png" title="Canales RSS (tecla de acceso: r)"
                         alt="Canales RSS (tecla de acceso: r)" height="14" width="14">
                 </a>
-                <a href="https://www.gobiernodecanarias.org/istac/twitter" style="padding-right: 0px; margin-right: 0px;" accesskey="t" title="Seguir a istac_es en Twitter (tecla de acceso: t)">
+                <a href="http://www.gobiernodecanarias.org/istac/twitter" style="padding-right: 0px; margin-right: 0px;" accesskey="t" title="Seguir a istac_es en Twitter (tecla de acceso: t)">
                     <img src="theme/images/icons/t_mini-a.png" style="vertical-align: text-bottom;"
                     title="Seguir a istac_es en Twitter (tecla de acceso: t)" alt="Seguir a istac_es en Twitter (tecla de acceso: t)" height="14"
                     width="14">
