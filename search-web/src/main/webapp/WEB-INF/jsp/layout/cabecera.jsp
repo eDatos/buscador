@@ -8,24 +8,28 @@
         <!-- MENU DE AYUDA -->
         <ul>
             <li style="padding-right: 2px; margin-right: 1px;">Síguenos:
-                <a href="http://www.gobiernodecanarias.org/istac/herramientas/rss.html" style="padding-right: 0px; margin-right: 0px;" accesskey="r" title="Canales RSS (tecla de acceso: r)">
+                <a href="https://www.gobiernodecanarias.org/istac/herramientas/rss.html" style="padding-right: 0px; margin-right: 0px;" accesskey="r" title="Canales RSS (tecla de acceso: r)">
                     <img style="vertical-align: text-bottom; float: none;" src="theme/images/icons/atom.png" title="Canales RSS (tecla de acceso: r)"
                         alt="Canales RSS (tecla de acceso: r)" height="14" width="14">
                 </a>
-                <a href="http://www.gobiernodecanarias.org/istac/twitter" style="padding-right: 0px; margin-right: 0px;" accesskey="t" title="Seguir a istac_es en Twitter (tecla de acceso: t)">
+                <a href="https://www.gobiernodecanarias.org/istac/twitter" style="padding-right: 0px; margin-right: 0px;" accesskey="t" title="Seguir a istac_es en Twitter (tecla de acceso: t)">
                     <img src="theme/images/icons/t_mini-a.png" style="vertical-align: text-bottom;"
                     title="Seguir a istac_es en Twitter (tecla de acceso: t)" alt="Seguir a istac_es en Twitter (tecla de acceso: t)" height="14"
                     width="14">
                 </a>
-                <a href="http://www.slideshare.net/ISTAC" style="padding-right: 0px; margin-right: 0px;" accesskey="s" title="Seguir a ISTAC en Slideshare (tecla de acceso: s)">
+                <a href="https://www.slideshare.net/ISTAC" style="padding-right: 0px; margin-right: 0px;" accesskey="s" title="Seguir a ISTAC en Slideshare (tecla de acceso: s)">
                     <img
                     src="theme/images/icons/slideshare.jpg" style="vertical-align: text-bottom;"
                     title="Seguir a ISTAC en Slideshare (tecla de acceso: s)" alt="Seguir a ISTAC en Slideshare (tecla de acceso: s)" height="14"
                     width="14">
                 </a>
-                <a href="http://www.youtube.com/user/istacES" style="padding-right: 2px; margin-right: 1px;" accesskey="s" title="Seguir a ISTAC en Youtube (tecla de acceso: y)">
+                <a href="https://www.youtube.com/user/istacES" style="padding-right: 2px; margin-right: 1px;" accesskey="y" title="Seguir a ISTAC en Youtube (tecla de acceso: y)">
                     <img src="theme/images/icons/youtube.png" style="vertical-align: text-bottom;"
                     title="Seguir a ISTAC en Youtube (tecla de acceso: y)" alt="Seguir a ISTAC en Youtube (tecla de acceso: y)" height="14" width="14">
+                </a>
+                <a href="https://public.tableau.com/profile/istac#!/" style="padding-right: 2px; margin-right: 1px;" accesskey="s" title="Seguir a ISTAC en Tableau (tecla de acceso: u)">
+                    <img src="theme/images/icons/tableau.png" style="vertical-align: text-bottom;"
+                    title="Seguir a ISTAC en Tableau (tecla de acceso: u)" alt="Seguir a ISTAC en Tableau (tecla de acceso: u)" height="14" width="14">
                 </a>
             </li>
             <li style="padding-right: 2px; margin-right: 1px;">|</li>
