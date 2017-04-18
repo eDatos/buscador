@@ -23,19 +23,7 @@
                                 <div class="col-md-7">
                                     <form:input type="text" class="form-control" path="filtroTextoQuery" placeholder="Ejemplo: Tasa de paro" />
                                 </div>
-                            </div>
-                            <div class="page-header">
-                                <h3 class="resultado_titulo">De la sección</h3>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-5"  style="margin-bottom: 3px;">
-                                    <form:select class="form-control" path="filtroSeccion" items="${filtroSeccionMap}" />
-                                </div>
-                                <div class="col-md-7">
-                                    <div id="filtroSeccionAreaContainer"><form:select class="form-control" path="filtroSeccionArea" items="${filtroSeccionAreaMap}"/></div>
-                                    <div id="filtroSeccionOperacionContainer" style="display: none"><form:select class="form-control" path="filtroSeccionOperacion" items="${filtroSeccionOperacionMap}"/></div>
-                                </div>
-                            </div>
+                            </div>                            
                             <div class="row" style="margin-top: 1em; float:right">
                                <button id="advanceSearch" type="submit" class="btn btn-primary">Buscar</button>
                             </div>
@@ -50,8 +38,6 @@
         </div>
         <p><form:errors path="userQuery"/></p>
     </form:form>
-                
-    <%@ include file="/WEB-INF/jsp/vistas/busqueda/facetedsTags.jsp" %>
 
     <p></p>
 </div>

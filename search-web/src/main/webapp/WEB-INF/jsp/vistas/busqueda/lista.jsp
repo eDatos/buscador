@@ -30,7 +30,6 @@
 		<div id="bloq_interior">
             <div class="contenido">
                 <div id="centercontainer">
-    			<div class="bloq_izq_grande">
     	            <div class="conten">
     	              
                       <%@ include file="/WEB-INF/jsp/vistas/busqueda/form.jsp" %>
@@ -135,10 +134,6 @@
     				  </div>
                       
     			    </div>
-    			</div>			
-        			<div class="columna_pequ">
-        			   <%@ include file="/WEB-INF/jsp/vistas/busqueda/faceteds.jsp"%>
-        			</div>
                 </div>
             </div>
 		</div>
