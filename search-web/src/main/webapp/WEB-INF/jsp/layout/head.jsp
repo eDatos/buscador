@@ -12,15 +12,15 @@
   		
         
         <!-- Gobierno de Canarias -->
-        <link rel="shortcut icon" href="http://www.gobiernodecanarias.org/gcc/img/favicon.ico"/>
+        <link rel="shortcut icon" href="//www.gobiernodecanarias.org/gcc/img/favicon.ico"/>
                 
-        <link href="http://www.gobiernodecanarias.org/gcc/css/estilos.css" rel="stylesheet" type="text/css" media="screen"/>
-        <link href="http://www.gobiernodecanarias.org/gcc/css/imprime.css" rel="stylesheet" type="text/css" media="print"/>
-        <link href="http://www.gobiernodecanarias.org/gcc/css/voz.css" rel="stylesheet" type="text/css" media="aural"/>
+        <link href="//www.gobiernodecanarias.org/gcc/css/estilos.css" rel="stylesheet" type="text/css" media="screen"/>
+        <link href="//www.gobiernodecanarias.org/gcc/css/imprime.css" rel="stylesheet" type="text/css" media="print"/>
+        <link href="//www.gobiernodecanarias.org/gcc/css/voz.css" rel="stylesheet" type="text/css" media="aural"/>
         
 	 	<!-- Hojas de estilo -->
-        <link rel="stylesheet" href="http://www.gobiernodecanarias.org/gc/css/buscador.css"/>
-        <link rel="stylesheet" href="http://www.gobiernodecanarias.org/gc/css/google.css"/>
+        <link rel="stylesheet" href="//www.gobiernodecanarias.org/gc/css/buscador.css"/>
+        <link rel="stylesheet" href="//www.gobiernodecanarias.org/gc/css/google.css"/>
 
         <link rel="stylesheet" href="<%=WebUtils.getFullURL(request, false)%>theme/css/gobcanoverwrite.css"/>
         <link rel="stylesheet" href="<%=WebUtils.getFullURL(request, false)%>theme/css/gobcanistacoverwrite.css"/>
