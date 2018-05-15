@@ -2,5 +2,5 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
   <comment>Definicion del entorno</comment>
-  <entry key="istac.idxmanager.buscador.data.url">H:/data/metamac/buscador</entry>
+  <entry key="istac.idxmanager.buscador.data.url">W:/data/istac/search/external</entry>
 </properties>
