@@ -34,16 +34,16 @@ import es.gobcan.istac.idxmanager.web.buscador.validation.BusquedaValidator;
 @Controller
 public class BusquedaController {
 
-    protected Log log = LogFactory.getLog(BusquedaController.class);
+    protected Log            log                                  = LogFactory.getLog(BusquedaController.class);
 
-    private static final int RESULTS_BY_PAGE = 10;
+    private static final int RESULTS_BY_PAGE                      = 10;
     private static final int NUMER_OF_VISIBLE_PAGES_IN_PAGINATION = 5;
 
     @Autowired
-    private WebUtils webUtils;
+    private WebUtils         webUtils;
 
     @Autowired
-    private BusquedaService busquedaService;
+    private BusquedaService  busquedaService;
 
     @Autowired
     private FiltrosComponent filtrosComponent;

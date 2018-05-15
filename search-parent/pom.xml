@@ -61,6 +61,12 @@
 
         <!-- SEARCH INDEXER -->
         <search-indexer-domain.version>5.0.1-SNAPSHOT</search-indexer-domain.version>
+        
+        <!-- CSV -->
+        <commons-csv.version>1.5</commons-csv.version>
+        
+        <!-- ARTE CONFIGURATION -->
+        <acom-configuration.version>1.0.1</acom-configuration.version>
     </properties>
 
     <dependencyManagement>
@@ -206,6 +212,20 @@
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${joda-time.version}</version>
+            </dependency>
+
+            <!-- CSV -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-csv</artifactId>
+                <version>${commons-csv.version}</version>
+            </dependency>
+            
+            <!-- ARTE CONFIGURATION -->
+            <dependency>
+                <groupId>com.arte.acom.acom-configuration</groupId>
+                <artifactId>acom-configuration</artifactId>
+                <version>${acom-configuration.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

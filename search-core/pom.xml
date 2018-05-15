@@ -26,6 +26,12 @@
             <artifactId>search-dao</artifactId>
             <version>${project.version}</version>
         </dependency>
+        
+        <!-- ARTE CONFIGURATION -->
+        <dependency>
+            <groupId>com.arte.acom.acom-configuration</groupId>
+            <artifactId>acom-configuration</artifactId>
+        </dependency>
 
         <!-- SOLR -->
         <dependency>
@@ -95,6 +101,12 @@
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
+        </dependency>
+
+        <!-- CSV -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
         </dependency>
     </dependencies>
 

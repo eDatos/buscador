@@ -99,12 +99,6 @@
         </dependency>
 
         <dependency>
-            <groupId>com.arte.acom.acom-configuration</groupId>
-            <artifactId>acom-configuration</artifactId>
-            <version>1.0.1</version>
-        </dependency>
-
-        <dependency>
             <groupId>com.googlecode.htmlcompressor</groupId>
             <artifactId>htmlcompressor</artifactId>
             <version>1.5.2</version>

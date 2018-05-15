@@ -25,16 +25,19 @@ import es.gobcan.istac.idxmanager.domain.mvc.enumerated.FiltroTextoEnum;
 @Service
 public class BusquedaServiceImpl implements BusquedaService {
 
-    protected Log log = LogFactory.getLog(BusquedaService.class);
+    protected Log               log                   = LogFactory.getLog(BusquedaService.class);
 
-    private static final String SELECT_QT = "/select";
-    private static final String BROWSE_QT = "/browse";
-    private static final String SPONSORED_QT = "/sponsored";
+    private static final String SELECT_QT             = "/select";
+    private static final String BROWSE_QT             = "/browse";
+    private static final String SPONSORED_QT          = "/sponsored";
 
-    private static final int MAX_SUGGESTED_RESULTS = 4;
+    private static final int    MAX_SUGGESTED_RESULTS = 4;
 
     @Autowired
-    private SolrService solr = null;
+    private SolrService         solr                  = null;
+
+    @Autowired
+    private AuditoriaService    auditoriaService;
 
     @Override
     public QueryResponse ejecutarQuery(Busqueda busqueda, int resultByPage) throws ServiceExcepcion {
@@ -66,6 +69,8 @@ public class BusquedaServiceImpl implements BusquedaService {
 
             // Maximo tiempo para efectuar la consulta 10000 milisegundos
             solrQuery.setTimeAllowed(10000);
+
+            auditoriaService.auditar(busqueda);
             return solr.ejecutarQuery(solrQuery);
         } catch (Exception e) {
             log.error("BusquedaServiceImpl::ejecutarQuery: " + e);
