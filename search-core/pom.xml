@@ -20,11 +20,9 @@
             <artifactId>search-indexer-domain</artifactId>
         </dependency>
 
-        <!-- SEARCH -->
         <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>search-dao</artifactId>
-            <version>${project.version}</version>
+            <groupId>es.gobcan.istac.search-indexer</groupId>
+            <artifactId><groupId>es.gobcan.istac.search-indexer</groupId></artifactId>
         </dependency>
         
         <!-- ARTE CONFIGURATION -->
