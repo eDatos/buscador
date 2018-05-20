@@ -60,7 +60,7 @@
         <joda-time.version>2.2</joda-time.version>        
 
         <!-- SEARCH INDEXER -->
-        <search-indexer-domain.version>5.0.1-SNAPSHOT</search-indexer-domain.version>
+        <search-indexer-domain.version>5.1.0</search-indexer-domain.version>
         
         <!-- CSV -->
         <commons-csv.version>1.5</commons-csv.version>
