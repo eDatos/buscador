@@ -22,7 +22,7 @@
 
         <dependency>
             <groupId>es.gobcan.istac.search-indexer</groupId>
-            <artifactId><groupId>es.gobcan.istac.search-indexer</groupId></artifactId>
+            <artifactId><groupId>es.gobcan.istac.search-indexer</artifactId>
         </dependency>
         
         <!-- ARTE CONFIGURATION -->
