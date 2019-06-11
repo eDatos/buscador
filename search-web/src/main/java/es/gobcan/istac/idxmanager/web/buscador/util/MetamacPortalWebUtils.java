@@ -8,24 +8,22 @@ import es.gobcan.istac.idxmanager.domain.modelo.IndexacionEnumDomain;
 
 public class MetamacPortalWebUtils {
 
-    private static final String COLON = ":";
-    private static final String LEFT_PARENTHESIS = "(";
-    private static final String RIGHT_PARENTHESIS = ")";
+    private static final String COLON                              = ":";
+    private static final String LEFT_PARENTHESIS                   = "(";
+    private static final String RIGHT_PARENTHESIS                  = ")";
 
-    private static final String PAGE_DATA_RESOURCE = "data.html";
-    private static final String PAGE_COLLECTION_RESOURCE = "collection.html";
-    private static final String URL_SINGLEPAGE_RESOURCE_DATASETS = "datasets";
-    private static final String URL_SEPARATOR = "/";
-    private static final String URL_SINGLEPAGE_SEPARATOR = "#";
-    private static final String URL_QUERY_SEPARATOR = "?";
-    private static final String URL_QUERY_EQUALS = "=";
-    private static final String URL_QUERY_AND = "&";
-    private static final String URL_QUERY_PARAMETER_RESOURCEID = "resourceId";
-    private static final String URL_QUERY_PARAMETER_AGENCYID = "agencyId";
-    private static final String URL_QUERY_PARAMETER_VERSION = "version";
-    private static final String URL_QUERY_PARAMETER_RESOURCETYPE = "resourceType";
+    private static final String PAGE_DATA_RESOURCE                 = "data.html";
+    private static final String PAGE_COLLECTION_RESOURCE           = "collection.html";
+    private static final String URL_SEPARATOR                      = "/";
+    private static final String URL_QUERY_SEPARATOR                = "?";
+    private static final String URL_QUERY_EQUALS                   = "=";
+    private static final String URL_QUERY_AND                      = "&";
+    private static final String URL_QUERY_PARAMETER_RESOURCEID     = "resourceId";
+    private static final String URL_QUERY_PARAMETER_AGENCYID       = "agencyId";
+    private static final String URL_QUERY_PARAMETER_VERSION        = "version";
+    private static final String URL_QUERY_PARAMETER_RESOURCETYPE   = "resourceType";
 
-    private static final String URL_QUERY_RESOURCE_TYPE_DATASET = "dataset";
+    private static final String URL_QUERY_RESOURCE_TYPE_DATASET    = "dataset";
     private static final String URL_QUERY_RESOURCE_TYPE_COLLECTION = "collection";
 
     public static String buildDatasetVersionUrl(SolrDocument item, TypeNMDomain typeNMDomain, String endpointUrl) {
@@ -34,8 +32,6 @@ public class MetamacPortalWebUtils {
         builder.append(PAGE_DATA_RESOURCE);
         builder.append(URL_QUERY_SEPARATOR);
         builder.append(buildQueryParametersForVersionableResource(item, typeNMDomain));
-        builder.append(URL_SINGLEPAGE_SEPARATOR);
-        builder.append(URL_SINGLEPAGE_RESOURCE_DATASETS);
 
         return builder.toString();
     }
