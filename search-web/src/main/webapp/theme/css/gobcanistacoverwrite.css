@@ -17,6 +17,27 @@ Sobrescritura estilos gobierno
 	font-weight: bold;
 }
 
+#migas p {
+	float: right;
+	padding: 9px 5px 0px 17px;
+	margin: 0px;
+}
+
+#migas p a img {
+	height: 14px;
+	width: 14px;
+}
+
+#migas .redes_sociales {
+	float: right;
+	margin-top: 7px;
+}
+
+#migas .redes_sociales a {
+	margin-left: 2px;
+	text-decoration: none;
+}
+
 .subseccion2 {
 	margin: 0 13px 0 0;
 	width: 47%;
@@ -911,3 +932,19 @@ div#tweets form {
 #pie_istac .dcha a 		{color:#000; text-decoration:none;  margin-right:7px;}
 #pie_istac .dcha a:hover	{text-decoration:underline;}
 #pie_istac .dcha a img 		{text-decoration:none;vertical-align:middle;border:none;}
+
+#cabecera #cab_superior ul li a {
+	padding-right: 2px;
+	margin-right: 1px;
+}
+
+#cabecera #cab_superior ul li a img {
+	vertical-align: text-bottom;
+	float: none;
+	height: 14px;
+	width: 14px;
+}
+
+#cabecera #menu_contextual ul.menu li {
+	margin-right: 2px;
+}
