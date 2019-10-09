@@ -27,9 +27,8 @@
         <ul class="menu">
             <li><a href="http://www.gobiernodecanarias.org/istac/temas_estadisticos/" class="select" accesskey="1" title="Estadísticas (tecla de acceso: 1)">Estadísticas</a></li>
             <li><a href="http://www.gobiernodecanarias.org/istac/istac/" class="inactive" accesskey="2" title="El ISTAC (tecla de acceso: 2)">El ISTAC</a></li>
-            <li><a href="http://www.gobiernodecanarias.org/istac/webescolar/" class="inactive" accesskey="3" title="Web escolar (tecla de acceso: 3)">Web escolar</a></li>
             <li><a href="http://www.gobiernodecanarias.org/istac/noticias/" class="inactive" accesskey="4" title="Noticias (tecla de acceso: 4)">Noticias</a></li>
-            <li><a href="https://sede.gobcan.es/istac/datos-abiertos/" class="inactive" accesskey="5" title="Datos abiertos (tecla de acceso: 5)">Datos abiertos</a></li>
+            <li><a href="http://www.gobiernodecanarias.org/istac/datos-abiertos/" class="inactive" accesskey="5" title="Datos abiertos (tecla de acceso: 5)">Datos abiertos</a></li>
         </ul>
         
         <!-- Búsqueda -->
