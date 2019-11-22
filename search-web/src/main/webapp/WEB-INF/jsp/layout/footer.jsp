@@ -6,9 +6,9 @@
         <div class="izda">© Gobierno de Canarias</div>
         <div class="dcha">
             <a href="http://opendefinition.org/od/2.0/es/" height="13px" target="_blank"><img alt="Open Data"
-                src="theme/images/img/od_80x15_black.png"></a> |<a href="http://www.gobiernodecanarias.org/istac/aviso_legal.html"
-                rel="license">Aviso Legal</a> |<a href="http://www.gobiernodecanarias.org/istac/politica-privacidad.html"
-                rel="license">Política de privacidad</a> |<a href="http://www.gobiernodecanarias.org/principal/sugrec/">Sugerencias y Reclamaciones</a>
+                src="theme/images/img/od_80x15_black.png"></a> | <a href="http://www.gobiernodecanarias.org/istac/aviso_legal.html"
+                rel="license">Aviso Legal</a> | <a href="http://www.gobiernodecanarias.org/istac/politica-privacidad.html"
+                rel="license">Política de privacidad</a> | <a href="http://www.gobiernodecanarias.org/principal/sugrec/">Sugerencias y Reclamaciones</a>
         </div>
     </div>
 
