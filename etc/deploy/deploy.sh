@@ -11,10 +11,9 @@ if [ "$1" == "--no-restart" ]; then
     RESTART=0
 fi
 
-
-scp -r etc/deploy deploy@estadisticas.arte-consultores.com:$TRANSFER_PATH
-scp search-web/target/buscador*.war deploy@estadisticas.arte-consultores.com:$TRANSFER_PATH/search.war
-ssh deploy@estadisticas.arte-consultores.com <<EOF
+scp -o ProxyCommand="ssh -W %h:%p deploy@estadisticas.arte-consultores.com" -r etc/deploy deploy@192.168.10.16:$TRANSFER_PATH
+scp -o ProxyCommand="ssh -W %h:%p deploy@estadisticas.arte-consultores.com" search-web/target/buscador*.war deploy@192.168.10.16:$TRANSFER_PATH/search.war
+ssh -o ProxyCommand="ssh -W %h:%p deploy@estadisticas.arte-consultores.com" deploy@192.168.10.16 <<EOF
 
     chmod a+x $TRANSFER_PATH/deploy/*.sh;
     . $TRANSFER_PATH/deploy/utilities.sh
