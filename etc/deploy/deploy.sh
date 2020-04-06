@@ -35,10 +35,13 @@ ssh -o ProxyCommand="ssh -W %h:%p deploy@estadisticas.arte-consultores.com" depl
 
     # Restore Configuration
     sudo cp $HOME_PATH/environment.xml $DEPLOY_TARGET_PATH/search/WEB-INF/classes/buscador/environment.xml
+    # Take care!, it's not necessary to restore the logback.xml file, it's externally configured in the app-config.xml file
 
     if [ $RESTART -eq 1 ]; then
         sudo chown -R edatos-external.edatos-external /servers/edatos-external        
         sudo service edatos-external01 start
     fi
+    
+    echo "Finished deploy"
 
 EOF
